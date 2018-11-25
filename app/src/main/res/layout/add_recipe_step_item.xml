@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/red"
+
+        android:contentDescription="@string/enter_your_recipe_step_title_description_and_video_url_here"
+
+        android:layout_margin="@dimen/margin_16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+
+            android:text="@string/delete"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:drawableEnd="@drawable/ic_delete_black_24dp"
+            android:drawableRight="@drawable/ic_delete_black_24dp"
+            style="@style/TextAppearance.AppCompat.Large"
+
+            android:layout_marginEnd="8dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/foreground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:cardElevation="@dimen/cardelevation_1dp"
+        app:cardCornerRadius="@dimen/card_radius_4dp"
+        app:cardUseCompatPadding="true"
+        android:background="@color/white">
+
+        <android.support.constraint.ConstraintLayout
+            android:padding="@dimen/padding_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_step_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/step_title"
+                android:inputType="textPersonName"
+                android:autofillHints="@string/step_title"
+
+                android:nextFocusDown="@id/et_step_desp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_step_desp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/step_description"
+                android:inputType="text"
+                android:autofillHints="@string/step_description"
+
+                android:layout_marginTop="@dimen/margin_8dp"
+
+                android:nextFocusDown="@id/et_video_url"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_step_title" />
+
+            <EditText
+                android:id="@+id/et_video_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:autofillHints="@string/video_url"
+                android:hint="@string/video_url"
+                android:inputType="textUri"
+
+                android:nextFocusDown="@id/btn_add_video"
+                android:nextFocusRight="@id/btn_add_video"
+
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_8dp"
+                android:layout_marginRight="@dimen/margin_8dp"
+
+                android:nextFocusForward="@id/btn_add_video"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_add_video"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_step_desp" />
+
+            <Button
+                android:id="@+id/btn_add_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:onClick="addVideo"
+                android:text="@string/add_video"
+                android:background="@drawable/ripple_rounded_primary_dark"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:contentDescription="@string/add_video"
+
+                app:layout_constraintBottom_toBottomOf="@+id/et_video_url"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/et_video_url" />
+
+            <ProgressBar
+                android:id="@+id/pb_add_video"
+                android:layout_width="@dimen/progressbar_add_video_width"
+                android:layout_height="@dimen/progressbar_add_video_height"
+
+                android:layout_margin="@dimen/margin_8dp"
+
+                app:layout_constraintEnd_toEndOf="@id/btn_add_video"
+                app:layout_constraintStart_toStartOf="@+id/btn_add_video"
+                app:layout_constraintTop_toTopOf="@+id/btn_add_video"
+                app:layout_constraintBottom_toBottomOf="@id/btn_add_video"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

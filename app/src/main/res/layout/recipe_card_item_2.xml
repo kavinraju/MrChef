@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/cardelevation_4dp"
+    app:cardCornerRadius="@dimen/cardCornerRadius_2dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="@dimen/margin_8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint_layout_recipecard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_recipecard"
+            android:layout_width="@dimen/recipecard_iv_2_width"
+            android:layout_height="@dimen/recipecard_iv_2_height"
+
+            android:background="@drawable/bk"
+            android:scaleType="centerCrop"
+            android:transitionName="sharedElementTransition"
+            android:contentDescription="@string/recipe_image_view"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:layout_width="@dimen/recipecard_iv_2_width"
+            android:layout_height="@dimen/recipecard_iv_2_height"
+
+            android:background="@drawable/scrim_gradient_recipe_card"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/tv_recipe_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="sans-serif"
+            android:text="@string/brownies"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+
+            android:layout_margin="@dimen/margin_8dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

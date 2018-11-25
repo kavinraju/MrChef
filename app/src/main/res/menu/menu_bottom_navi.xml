@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_nav_recipes"
+        android:contentDescription="@string/recipes_is_selected"
+        android:icon="@drawable/ic_restaurant_primary_24dp"
+        android:title="@string/recipes" />
+
+    <item
+        android:id="@+id/bottom_nav_favorite_recipes"
+        android:contentDescription="@string/favorite_recipes_is_selected"
+        android:icon="@drawable/favorite_primary_24dp"
+        android:title="@string/favorite_recipes" />
+
+    <item
+        android:id="@+id/bottom_nav_add_recipe"
+        android:contentDescription="@string/add_recipe_is_selected"
+        android:icon="@drawable/ic_add_circle_outline_primary_24dp"
+        android:title="@string/add_recipe" />
+
+    <item
+        android:id="@+id/bottom_nav_settings"
+        android:contentDescription="@string/settings_is_selected"
+        android:icon="@drawable/ic_settings_primary_24dp"
+        android:title="@string/settings" />
+
+
+</menu>
