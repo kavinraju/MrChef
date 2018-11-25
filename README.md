@@ -1,4 +1,4 @@
-# BakingApp
+# MrChef App
 ## This project was created as a part of Android Developer Nanodegree.
 
 Please add your the following files on your own -<br>
