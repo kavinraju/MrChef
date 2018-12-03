@@ -52,7 +52,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                android:ems="10"
                 android:hint="@string/ingredient_name"
                 android:inputType="textPersonName"
 
@@ -75,31 +74,25 @@
                 android:hint="@string/qty"
                 android:inputType="number"
 
-                android:layout_marginTop="@dimen/margin_8dp"
-                android:layout_marginBottom="@dimen/margin_8dp"
-
                  android:nextFocusForward="@id/spinner_unit"
                  android:nextFocusRight="@id/spinner_unit"
 
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/et_ingredient"
                 app:layout_constraintEnd_toStartOf="@+id/spinner_unit"
                 app:layout_constraintStart_toEndOf="@+id/et_ingredient"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="@id/et_ingredient" />
 
             <android.support.v7.widget.AppCompatSpinner
                 android:id="@+id/spinner_unit"
                 android:layout_width="wrap_content"
-                android:layout_height="46dp"
+                android:layout_height="wrap_content"
 
-                android:layout_marginTop="@dimen/margin_8dp"
                 android:background="@android:color/transparent"
 
-                android:layout_marginBottom="@dimen/margin_8dp"
-
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/et_qty"
+                app:layout_constraintTop_toTopOf="@id/et_qty"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/et_qty"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toEndOf="@+id/et_qty"/>
         </android.support.constraint.ConstraintLayout>
     </android.support.v7.widget.CardView>
 </FrameLayout>

@@ -10,6 +10,7 @@
     <color name="colorUnplayed">#4900bfa5</color>
     <color name="colorBuffered">#9a00bfa5</color>
     <color name="black">#000000</color>
+    <color name="grey">#585858</color>
     <color name="white">#ffffff</color>
     <color name="red">#ff0000</color>
 </resources>

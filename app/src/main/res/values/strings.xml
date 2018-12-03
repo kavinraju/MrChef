@@ -63,4 +63,15 @@
     <string name="full_screen">Full Screen</string>
     <string name="enter_your_recipe_step_title_description_and_video_url_here">Enter your recipe step title, description and video URL here</string>
     <string name="toast_msg_added_as_favorite">Added as Favorite</string>
+    <string name="about">About</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="close_about_screen">Close about screen</string>
+    <string name="github">GitHub</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="twitter">Twitter</string>
+    <string name="gmail">Gmail</string>
+    <string name="s_kavin_raju">S.Kavin Raju</string>
+    <string name="app_developed_by">App developed by</string>
+    <string name="desp_desp">Andorid Developer | Google Udacity India Scholar - #introductions channel moderator</string>
 </resources>

@@ -10,7 +10,7 @@
     <android.support.v4.view.ViewPager
             android:id="@+id/container_viewPager"
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="400dp"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:background="@color/colorPrimaryLight"
 
@@ -48,7 +48,6 @@
         android:fontFamily="sans-serif-smallcaps"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
-        android:padding="@dimen/padding_4dp"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,14 +58,14 @@
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_in"
-
-        android:textAllCaps="false"
-        android:onClick="onClickSignIn"
 
         android:layout_marginStart="@dimen/margin_32dp"
         android:layout_marginEnd="@dimen/margin_32dp"
         android:layout_marginBottom="@dimen/margin_16dp"
+
+        android:onClick="onClickSignIn"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

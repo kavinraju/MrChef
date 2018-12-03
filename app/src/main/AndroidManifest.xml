@@ -18,7 +18,7 @@
         <activity
             android:name=".HomeActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".RecipeActivity"
             android:label="@string/title_activity_recipe"
@@ -27,7 +27,6 @@
             android:name=".RecipeStepActivity"
             android:label="@string/title_activity_recipe_step"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.NoActionBarWithTranslucentStatusBar">
@@ -47,7 +46,6 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/recipe_ingredients_widget_info" />
         </receiver>
-
         <receiver android:name=".WidgetUtils.RecipesWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -62,14 +60,14 @@
         <service
             android:name=".WidgetUtils.RecipeIngredientsListWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
-
-        <service android:name=".WidgetUtils.RecipesGridviewWidgetService"
-            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <service
+            android:name=".WidgetUtils.RecipesGridviewWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
         <service android:name=".WidgetUtils.RecipesGridViewService" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/applicationID"/>
+            android:value="@string/applicationID" />
 
     </application>
 
